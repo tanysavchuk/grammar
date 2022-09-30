@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="http://localhost:3000/static/css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="flex justify-center items-center bg-gradient h-14 xl: px-2.5">
+      <div class="containner-inner">
+        <div class="containner-inner flex items-center">
+          <img src="http://localhost:3000/public/img/flag.png" />
+          <a href="" class="containner-inner flex items-center">
+            <h2
+              class="text-white font-poppins font-medium px-3.5 xl:text-lg md:text-xs text-center"
+            >
+              Grammarly stands with our friends, colleagues, and family in Ukraine, and with all
+              people of Ukraine.
+            </h2>
+            <p class="text-teal-400 font-medium text-lg xl:text-sm md:text-xs text-center">
+              Join us
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="navbar" class="flex items-center h-14 bg-white w-full 2xl: px-2.5">
+      <div class="flex items-center h-8">
+        <a href="">
+          <img src="http://localhost:3000/public/img/ukraine_logo.svg" alt="" />
+        </a>
+      </div>
+      <nav class="flex items-center justify-between w-full">
+        <div class="flex items-center">
+          <div
+            id="writting-option"
+            class="font-serif font-semibold text-xs px-5 hover:text-gray-400 cursor-pointer"
+          >
+            WRITING
+          </div>
+          <div
+            class="invisible absolute top-24 left-48 cursor-pointer inline-block w-28 bg-white popup-shadow rounded-md"
+          >
+            <ul
+              id="popupList"
+              class="w-28 bg-white text-xs font-semibold leading-6 px-2 rounded-md popup-shadow invisible"
+            >
+              <a href=""><li class="uppercase hover:text-gray-400">Writing tips</li></a>
+              <a href=""><li class="uppercase hover:text-gray-400">Grammar</li></a>
+              <a href=""><li class="uppercase hover:text-gray-400">Students</li></a>
+              <a href=""><li class="uppercase hover:text-gray-400">Professionals</li></a>
+              <a href=""><li class="uppercase hover:text-gray-400">lifestyle</li></a>
+            </ul>
+          </div>
+          <div class="font-serif font-semibold text-xs hover:text-gray-400">
+            <a href=""> PRODUCT</a>
+          </div>
+          <div class="font-serif font-semibold text-xs px-5 hover:text-gray-400">
+            <a href="">COMPANI </a>
+          </div>
+        </div>
+        <!-- <div class="flex w-full h-8">
+          <div class="flex items-center justify-between borderblack absolute bg-white">
+            <input
+              type="text"
+              name="search"
+              placeholder="SEARCH"
+              class="font-poppins font-medium text-xs cursor-pointer pl-12"
+            />
+            <button class="rounded-full bg-teal-400 h-8 w-8 flex justify-end items-center">
+              <i class="fa-solid fa-magnifying-glass text-white text-lg font-thin pr-2.5"></i>
+            </button>
+          </div>
+        </div> -->
+        <div class="flex items-center justify-end">
+          <div class="flex items-center pl-24">
+            <i class="fa-solid fa-magnifying-glass text-gray-400 text-xl font-thin pr-2.5"></i>
+            <input
+              type="text"
+              name="search"
+              placeholder="SEARCH"
+              class="font-poppins font-medium text-xs w-20 cursor-pointer"
+            />
+          </div>
+
+          <div>
+            <button
+              class="w-40 h-8 rounded-full bg-teal-400 text-white font-serif font-medium text-sm"
+            >
+              START WRITING
+            </button>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="flex justify-center">
+      <div class="flex-wrap justify-between w-7/12 my-20">
+        <div class="flex">
+          <div class="w-1/2">
+            <h1 class="text-4xl font-poppins font-semibold text-gray-700 mb-6">Grammar Rules</h1>
+            <p class="text-xl font-serif text-gray-400">
+              Find answers to all your writing conundrums with our simple guide to basic English
+              grammar rules.
+            </p>
+          </div>
+          <div class="w-1/2">
+            <img src="http://localhost:3000/public/img/banner.svg" alt="" class="w-full h-full" />
+          </div>
+        </div>
+
+        <div class="flex justify-center w-full mt-12">
+          <div class="flex justify-center items-center border-shadow w-full">
+            <a href="" class="w-full p-2.5">
+              <div class="flex justify-between items-center">
+                <img src="http://localhost:3000/public/img/document.svg" alt="" />
+                <p class="font-semibold text-gray-600 xl: mx-5">
+                  Correct grammatical mistakes and other writing errors.
+                </p>
+                <p class="font-serif font-medium text-xs text-teal-400">ONLINE GRAMMAR CHECK</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex justify-center my-20">
+      <div class="flex justify-start w-7/12">
+        <div class="w-1/4 lg: mr-5">
+          <h2 class="mb-4 text-xl font-medium text-gray-800">Grammar</h2>
+          <ul class="text-teal-500 sm:text-sm lg:text-lg lg:leading-9">
+            <a href="/adjectives"><li>Adjectives</li></a>
+            <a href=""><li>Adverbs</li></a>
+            <a href=""><li>Articles</li></a>
+            <a href=""><li>Conjunctions</li></a>
+            <a href=""><li>Verbs</li></a>
+            <a href=""><li>Interjections</li></a>
+            <a href=""><li>Nouns</li></a>
+            <a href=""><li>Prepositions</li></a>
+            <a href=""><li>Pronouns</li></a>
+          </ul>
+        </div>
+        <div class="w-1/4 lg: mr-5">
+          <h2 class="mb-4 text-xl font-medium text-gray-800 lg: tx-lg">Punctuation</h2>
+          <ul class="text-teal-500 sm:text-sm lg:text-lg lg:leading-9">
+            <a href=""><li>Adjectives</li></a>
+            <a href=""><li>Adverbs</li></a>
+            <a href=""><li>Articles</li></a>
+            <a href=""><li>Conjunctions</li></a>
+            <a href=""><li>Verbs</li></a>
+            <a href=""><li>Interjections</li></a>
+            <a href=""><li>Nouns</li></a>
+            <a href=""><li>Prepositions</li></a>
+            <a href=""><li>Pronouns</li></a>
+            <a href=""><li>Interjections</li></a>
+            <a href=""><li>Nouns</li></a>
+            <a href=""><li>Prepositions</li></a>
+            <a href=""><li>Pronouns</li></a>
+          </ul>
+        </div>
+        <div class="w-1/4 lg: mr-5">
+          <h2 class="mb-4 text-xl font-medium text-gray-800 lg: tx-lg">Mechanics</h2>
+          <ul class="text-teal-500 sm:text-sm lg:text-lg lg:leading-9">
+            <a href=""><li>Adjectives</li></a>
+            <a href=""><li>Adverbs</li></a>
+            <a href=""><li>Articles</li></a>
+            <a href=""><li>Conjunctions</li></a>
+            <a href=""><li>Verbs</li></a>
+          </ul>
+        </div>
+        <div class="w-1/4">
+          <h2 class="mb-4 text-xl font-medium text-gray-800 lg: tx-lg">Techniques</h2>
+          <ul class="text-teal-500 sm:text-sm lg:text-lg lg:leading-9">
+            <a href=""><li>Adjectives</li></a>
+            <a href=""><li>Adverbs</li></a>
+            <a href=""><li>Articles</li></a>
+            <a href=""><li>Conjunctions</li></a>
+            <a href=""><li>Verbs</li></a>
+          </ul>
+          <div>
+            <h2 class="mb-4 mt-10 text-xl font-medium text-gray-800 lg: tx-lg">Style</h2>
+            <ul class="text-teal-500 sm:text-sm lg:text-lg lg:leading-9">
+              <a href=""><li>Adjectives</li></a>
+              <a href=""><li>Adverbs</li></a>
+              <a href=""><li>Articles</li></a>
+              <a href=""><li>Conjunctions</li></a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex justify-center">
+      <div class="bg-gradient-blue h-80 rounded-lg w-3/5">
+        <div class="flex justify-center my-5 xl:mx-5">
+          <h2 class="font-serif text-4xl font-normal text-white text-center my-10">
+            Writing, grammar, and communication tips for your inbox.
+          </h2>
+        </div>
+
+        <div class="flex justify-center">
+          <div class="w-full mx-52 flex justify-center sm:mx-20">
+            <label for="email"> </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your email..."
+              class="flex justify-center h-14 rounded w-full p-1.5"
+            />
+          </div>
+          <div class="relative h-0 w-0">
+            <button
+              class="relative top-2.5 right-48 w-24 rounded bg-sky-500 h-9 text-white text-xs"
+            >
+              SUBSCRIBE
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex justify-center my-20 bg-red-50 pb-20 pr-5">
+      <div class="flex justify-start w-7/12">
+        <div class="w-1/4 lg: mr-5">
+          <h2 class="mb-2 text-xl font-medium text-gray-800">Grammar</h2>
+          <ul class="text-cyan-900 text-sm leading-6">
+            <a href=""><li>Adjectives</li></a>
+            <a href=""><li>Adverbs</li></a>
+            <a href=""><li>Articles</li></a>
+            <a href=""><li>Conjunctions</li></a>
+            <a href=""><li>Verbs</li></a>
+            <a href=""><li>Interjections</li></a>
+            <a href=""><li>Nouns</li></a>
+            <a href=""><li>Prepositions</li></a>
+            <a href=""><li>Pronouns</li></a>
+          </ul>
+        </div>
+        <div class="w-1/4 lg: mr-5">
+          <h2 class="mb-2 text-xl font-medium text-gray-800">Grammar</h2>
+          <ul class="text-cyan-900 text-sm leading-6">
+            <a href=""><li>Adjectives</li></a>
+            <a href=""><li>Adverbs</li></a>
+            <a href=""><li>Articles</li></a>
+            <a href=""><li>Conjunctions</li></a>
+            <a href=""><li>Verbs</li></a>
+            <a href=""><li>Interjections</li></a>
+            <a href=""><li>Nouns</li></a>
+            <a href=""><li>Prepositions</li></a>
+            <a href=""><li>Pronouns</li></a>
+            <a href=""><li>Verbs</li></a>
+            <a href=""><li>Interjections</li></a>
+            <a href=""><li>Nouns</li></a>
+            <a href=""><li>Prepositions</li></a>
+            <a href=""><li>Pronouns</li></a>
+          </ul>
+        </div>
+        <div class="w-1/4 lg: mr-5">
+          <h2 class="mb-2 text-xl font-medium text-gray-800">Grammar</h2>
+          <ul class="text-cyan-900 text-sm leading-6">
+            <a href=""><li>Adjectives</li></a>
+            <a href=""><li>Adverbs</li></a>
+            <a href=""><li>Articles</li></a>
+            <a href=""><li>Conjunctions</li></a>
+            <a href=""><li>Verbs</li></a>
+            <a href=""><li>Interjections</li></a>
+            <a href=""><li>Nouns</li></a>
+            <a href=""><li>Prepositions</li></a>
+            <a href=""><li>Pronouns</li></a>
+          </ul>
+        </div>
+        <div class="w-1/4 lg: mr-5">
+          <h2 class="mb-2 text-xl font-medium text-gray-800">Grammar</h2>
+          <ul class="text-cyan-900 text-sm leading-6">
+            <a href=""><li>Adjectives</li></a>
+            <a href=""><li>Adverbs</li></a>
+            <a href=""><li>Articles</li></a>
+            <a href=""><li>Conjunctions</li></a>
+            <a href=""><li>Verbs</li></a>
+            <a href=""><li>Interjections</li></a>
+            <a href=""><li>Nouns</li></a>
+            <a href=""><li>Prepositions</li></a>
+            <a href=""><li>Pronouns</li></a>
+            <a href=""><li>Conjunctions</li></a>
+          </ul>
+        </div>
+        <div class="w-1/4 lg: mr-5">
+          <h2 class="mb-2 text-xl font-medium text-gray-800">Grammar</h2>
+          <ul class="text-cyan-900 text-sm leading-6">
+            <a href=""><li>Adjectives</li></a>
+            <a href=""><li>Adverbs</li></a>
+            <a href=""
+              ><li><i class="fa-brands fa-facebook-f"></i> Facebook</li></a
+            >
+            <a href=""
+              ><li class="flex items-center">
+                <img src="http://localhost:3000/public/img/instagram.svg" alt="" /></li
+            ></a>
+            <a href=""
+              ><li><i class="fa-brands fa-twitter"></i> Twitter</li></a
+            >
+            <a href=""
+              ><li><i class="fa-brands fa-linkedin-in"></i> Linkedin</li></a
+            >
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    var writtingOption = document.getElementById('writting-option')
+    writtingOption.addEventListener('click', () => {
+      document.getElementById('popupList').classList.toggle('show')
+    })
+    window.onscroll = function () {
+      myFunction()
+    }
+    let navbar = document.getElementById('navbar')
+
+    let sticky = navbar.offsetTop
+    function myFunction() {
+      console.log('window.pageYOffset: ', window.pageYOffset)
+      console.log('sticky: ', sticky)
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add('fixed')
+        navbar.classList.add('top-0')
+      } else {
+        navbar.classList.remove('fixed')
+        navbar.classList.remove('top-0')
+      }
+    }
+  </script>
+</html>

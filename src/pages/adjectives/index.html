@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="http://localhost:3000/static/css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="flex justify-center items-center bg-gradient h-14 xl: px-2.5">
+      <div class="containner-inner">
+        <div class="containner-inner flex items-center">
+          <img src="http://localhost:3000/public/img/flag.png" />
+          <a href="" class="containner-inner flex items-center">
+            <h2
+              class="text-white font-poppins font-medium px-3.5 md:text-lg sm:text-xs text-center"
+            >
+              Grammarly stands with our friends, colleagues, and family in Ukraine, and with all
+              people of Ukraine.
+            </h2>
+            <p class="text-teal-400 font-medium md:text-lg sm:text-xs text-center">Join us</p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="flex items-center h-14 bg-white w-full 2xl: px-2.5">
+      <div class="flex items-center h-8">
+        <a href="">
+          <img src="http://localhost:3000/public/img/ukraine_logo.svg" alt="" />
+        </a>
+      </div>
+      <nav class="flex items-center justify-between w-full">
+        <div class="flex items-center">
+          <div
+            id="writting-option"
+            class="font-serif font-semibold text-xs px-5 hover:text-gray-400 cursor-pointer"
+          >
+            WRITING
+          </div>
+          <div
+            class="invisible absolute top-24 left-48 cursor-pointer inline-block w-28 bg-white popup-shadow rounded-md"
+          >
+            <ul
+              id="popupList"
+              class="w-28 bg-white text-xs font-semibold leading-6 px-2 rounded-md popup-shadow invisible"
+            >
+              <a href=""><li class="uppercase hover:text-gray-400">Writing tips</li></a>
+              <a href=""><li class="uppercase hover:text-gray-400">Grammar</li></a>
+              <a href=""><li class="uppercase hover:text-gray-400">Students</li></a>
+              <a href=""><li class="uppercase hover:text-gray-400">Professionals</li></a>
+              <a href=""><li class="uppercase hover:text-gray-400">lifestyle</li></a>
+            </ul>
+          </div>
+          <div class="font-serif font-semibold text-xs hover:text-gray-400">
+            <a href=""> PRODUCT</a>
+          </div>
+          <div class="font-serif font-semibold text-xs px-5 hover:text-gray-400">
+            <a href="">COMPANI </a>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-end">
+          <div class="flex items-center pl-24">
+            <i
+              class="fa-solid fa-magnifying-glass text-gray-400 text-xl font-extralight pr-2.5"
+            ></i>
+            <input
+              type="text"
+              name="search"
+              placeholder="SEARCH"
+              class="font-poppins font-medium text-xs w-20 cursor-pointer"
+            />
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div
+      id="fixedBlue"
+      class="bg-gradient-blue-revers flex items-center justify-center h-28 w-full z-50 px-5"
+    >
+      <div class="flex items-center justify-center">
+        <div class="flex items-center justify-between">
+          <div id="listIcon">
+            <div class="flex justify-center items-center rounded-md bg-white h-20 w-16 list-shadow">
+              <i class="fa-solid fa-list text-5xl text-blue-400"></i>
+            </div>
+          </div>
+
+          <h3 class="text-white text-xl font-poppins font-medium px-20">
+            Real-time suggestions, wherever you write.
+          </h3>
+          <button
+            class="h-10 w-48 md:rounded-full bg-teal-400 text-white font-serif md:font-medium md:text-sm sm:text-xs sm:font-normal sm:rounded-lg px-1"
+          >
+            Gat grammarly it's free
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex justify-center">
+      <div class="mr-5">
+        <div class="mt-44 md:px-2 sm:pl-5">
+          <img src="http://localhost:3000/public/img/logo-grin.jpeg" alt="" class="h-16" />
+
+          <h3 class="text-sm font-poppins font-semibold mt-4 mb-2">Grammarly</h3>
+          <p class="text-xs font-poppins text-gray-400">Updated on</p>
+          <p class="text-xs font-poppins text-gray-400">September 16, 2022</p>
+          <p class="font-poppins text-gray-500 font-semibold text-xs mt-4">GRAMMAR</p>
+        </div>
+        <div id="skrolBox" class="h-5/6 mt-32 pl-5">
+          <div id="iconsFixed" class="mt-28 lg:sticky lg:top-24 sm:static">
+            <div
+              class="h-10 w-10 rounded-full bg-pink-50 flex justify-center items-center hover:bg-pink-100"
+            >
+              <a href=""
+                ><i class="fa-brands fa-facebook-f text-xl text-gray-500 hover:text-gray-600"></i
+              ></a>
+            </div>
+            <div
+              class="h-10 w-10 rounded-full bg-pink-50 flex justify-center items-center my-2 hover:bg-pink-100"
+            >
+              <a href=""
+                ><i class="fa-brands fa-twitter text-xl text-gray-500 hover:text-gray-600"></i
+              ></a>
+            </div>
+            <div
+              class="h-10 w-10 rounded-full bg-pink-50 flex justify-center items-center hover:bg-pink-100"
+            >
+              <a href=""
+                ><i class="fa-brands fa-linkedin-in text-xl text-gray-500 hover:text-gray-600"></i
+              ></a>
+            </div>
+            <div
+              class="h-10 w-10 rounded-full bg-pink-50 flex justify-center items-center my-2 hover:bg-pink-100"
+            >
+              <a href=""
+                ><i class="fa-solid fa-envelope text-xl text-gray-500 hover:text-gray-600"></i
+              ></a>
+            </div>
+            <div
+              class="h-10 w-10 rounded-full bg-pink-50 flex justify-center items-center hover:bg-pink-100"
+            >
+              <a href=""
+                ><i
+                  class="fa-brands fa-facebook-messenger text-xl text-gray-500 hover:text-gray-600"
+                ></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col items-center lg:w-1/2 my-20 px-5 sm:w-3/4">
+        <h1 class="text-4xl font-semibold mb-12">What Is an Adjective?</h1>
+        <p class="font-poppins text-lg text-gray-700 leading-9">
+          <span class="text-gray-700 font-semibold">Adjectives</span> are words that describe the
+          qualities or states of being of nouns:<i> enormous, doglike, silly, yellow, fun, fast.</i>
+          They can also describe the quantity of
+          <a href="" class="underline decoration-slate-300 decoration-4">nouns:</a>
+          <i>many, few, millions, eleven.</i>
+        </p>
+        <h3 class="text-2xl font-normal mt-12 mb-8 text-left w-full">Adjectives modify nouns</h3>
+        <p class="font-poppins text-lg text-gray-700 leading-9">
+          Most students learn that adjectives are words that modify (describe) nouns. Adjectives do
+          not modify <a href="" class="underline decoration-slate-300 decoration-4">verbs</a> or
+          <a href="" class="underline decoration-slate-300 decoration-4">adverbs</a> or other
+          adjectives.
+        </p>
+        <ul
+          class="my-8 w-full text-left ont-poppins text-lg text-gray-700 leading-10 tracking-wider"
+        >
+          <li>
+            <span class="pr-10 select-none">Example </span> Margot wore a <b>beautiful</b> hat to
+            the pie-eating contest.
+          </li>
+          <li>
+            <span class="pr-10 select-none">Example </span> <b>Furry </b> dogs may overheat in the
+            summertime.
+          </li>
+          <li>
+            <span class="pr-10 select-none">Example </span> My cake should have
+            <b>sixteen </b> candles.
+          </li>
+          <li>
+            <span class="pr-10 select-none">Example </span> The <b>scariest</b> villain of all time
+            is Darth Vader.
+          </li>
+        </ul>
+        <p class="font-poppins text-lg text-gray-700 leading-9 mb-9">
+          In the sentences above, the adjectives are easy to spot because they come immediately
+          before the nouns they modify.
+        </p>
+        <div class="bg-pink-50 rounded-lg p-8">
+          <p class="font-poppins text-lg text-gray-700 leading-9">
+            <span class="text-green-600 font-medium">Here’s a tip: </span>Want to make sure your
+            <a href="">writing</a> shines? Grammarly can
+            <a href="" class="underline decoration-slate-300 decoration-4">check your spelling</a>
+            and save you from
+            <a href="" class="underline decoration-slate-300 decoration-4">grammar</a> and
+            <a href="" class="underline decoration-slate-300 decoration-4">punctuation</a> mistakes.
+            It even
+            <a href="">proofreads</a>
+            your text, so your work is extra polished wherever you write.
+          </p>
+        </div>
+        <div
+          class="flex justify-between items-center box-shadow-lightpink mb-12 mt-9 p-8 rounded-lg w-full"
+        >
+          <img src="http://localhost:3000/public/img/document.svg" alt="" />
+
+          <div class="md:px-8 sm:px-4">
+            <p class="text-xl font-semibold font-poppins text-gray-700 sm:text-xs md:text-xl">
+              Your writing, at its best
+            </p>
+            <p class="font-poppins text-lg text-gray-700 sm:text-xs md:text-xl">
+              Grammarly helps you communicate confidently
+            </p>
+          </div>
+          <button
+            class="bg-teal-400 text-white text-xs p-1 sm:w-28 sm:rounded-md sm:font-normal md:w-52 md:h-10 md:rounded-full md:font-semibold"
+          >
+            WRITE WITH GRAMMARLY
+          </button>
+        </div>
+        <div>
+          <p class="font-poppins text-lg text-gray-700 leading-9 mb-8">
+            But adjectives can do more than just modify nouns. They can also act as a complement to
+            <a href="" class="underline decoration-slate-300 decoration-4">linking verbs</a> or the
+            verb <i>to be</i>. A linking verb is a verb <i>like to feel, to seem,</i> or to
+            <i>taste that</i> describes a state of being or a sensory experience.
+          </p>
+          <ul
+            class="my-8 w-full text-left ont-poppins text-lg text-gray-700 leading-10 tracking-wider"
+          >
+            <li><span class="pr-10 select-none">Example </span> That cow sure is <b>happy.</b></li>
+            <li>
+              <span class="pr-10 select-none">Example </span> It smells <b>gross</b> in the locker
+              room.
+            </li>
+            <li>
+              <span class="pr-10 select-none">Example </span> Driving is <b>faster </b> than
+              walking.
+            </li>
+          </ul>
+          <p class="font-poppins text-lg text-gray-700 leading-9">
+            The technical term for an adjective used this way is
+            <i
+              ><a href="" class="underline decoration-slate-300 decoration-4">predicate</a>
+              adjective</i
+            >.
+          </p>
+          <h3 class="text-2xl font-normal mt-9 mb-7">Uses of adjectives</h3>
+          <p class="font-poppins text-lg text-gray-700 leading-9">
+            Adjectives tell the reader how much—or how many—of something you’re talking about, which
+            thing you want passed to you, or which kind of something you want.
+          </p>
+          <ul
+            class="mt-8 w-full text-left ont-poppins text-lg text-gray-700 leading-10 tracking-wider"
+          >
+            <li>
+              <span class="pr-10 select-none">Example </span> Please use
+              <b>three white flowers</b> in the arrangement.
+            </li>
+          </ul>
+          <p class="font-poppins text-lg text-gray-700 leading-9 my-6">
+            <i>Three </i> and <i>white</i> are modifying flowers.
+          </p>
+          <p class="font-poppins text-lg text-gray-700 leading-9 mb-6">
+            Often, when adjectives are used together, you should separate them with a comma or
+            conjunction. See “Coordinate Adjectives” below for more detail.
+          </p>
+          <ul
+            class="mt-8 w-full text-left ont-poppins text-lg text-gray-700 leading-10 tracking-wider"
+          >
+            <li>
+              <span class="pr-10 select-none">Example </span> I’m looking for a
+              <b>small, good-tempered dog</b> to keep as a pet.
+            </li>
+            <li>
+              <span class="pr-10 select-none">Example </span> My new dog is
+              <b>small and good-tempered.</b>
+            </li>
+          </ul>
+          <h3 class="text-2xl font-normal mt-9 mb-7">Degrees of comparison</h3>
+          <p class="font-poppins text-lg text-gray-700 leading-9">
+            Adjectives come in three forms: absolute, <i>comparative</i>, and <i>superlative</i>.
+            Absolute adjectives describe something in its own right.
+          </p>
+          <ul
+            class="mt-8 w-full text-left ont-poppins text-lg text-gray-700 leading-10 tracking-wider"
+          >
+            <li><span class="pr-10 select-none">Example </span> A <b>cool</b> guy</li>
+            <li><span class="pr-10 select-none">Example </span>A <b> messy</b> desk</li>
+            <li><span class="pr-10 select-none">Example </span> A <b>mischievous</b> cat</li>
+            <li><span class="pr-10 select-none">Example </span> <b>Garrulous </b> squirrels</li>
+          </ul>
+          <p class="font-poppins text-lg text-gray-700 leading-9 my-5">
+            Comparative adjectives, unsurprisingly, make a comparison between two or more things.
+            For most one-syllable adjectives, the comparative is formed by adding the suffix
+            <i>-er</i> (or just <i>-r</i> if the adjective already ends with an <i>e</i>). For
+            two-syllable adjectives ending in -y, replace -y with -ier. For multi-syllable
+            adjectives, add the word <i>more.</i>
+          </p>
+          <ul
+            class="mt-8 w-full text-left ont-poppins text-lg text-gray-700 leading-10 tracking-wider"
+          >
+            <li><span class="pr-10 select-none">Example </span> A <b>cooler</b> guy</li>
+            <li><span class="pr-10 select-none">Example </span>A <b> messier</b> desk</li>
+            <li><span class="pr-10 select-none">Example </span> A <b>more mischievous</b> cat</li>
+            <li>
+              <span class="pr-10 select-none">Example </span> <b> More garrulous </b> squirrels
+            </li>
+          </ul>
+          <p class="font-poppins text-lg text-gray-700 leading-9 my-5">
+            Superlative adjectives indicate that something has the highest degree of the quality in
+            question. One-syllable adjectives become superlatives by adding the suffix
+            <i>-est</i> (or just <i>-st</i> for adjectives that already end in <i>e</i>).
+            Two-syllable adjectives ending in <i>-y</i> replace <i>-y</i> with <i>-iest</i>.
+            Multi-syllable adjectives add the word <i>most</i>. When you use an article with a
+            superlative adjective, it will almost always be the definite article
+            <i> (the) </i>rather than <i>a</i> or <i>an</i>. Using a superlative inherently
+            indicates that you are talking about a specific item or items.
+          </p>
+          <ul class="w-full text-left ont-poppins text-lg text-gray-700 leading-10 tracking-wider">
+            <li><span class="pr-10 select-none">Example </span> The <b>coolest</b> guy</li>
+            <li><span class="pr-10 select-none">Example </span>The <b> messier</b> desk</li>
+            <li><span class="pr-10 select-none">Example </span> The<b>most mischievous</b> cat</li>
+            <li>
+              <span class="pr-10 select-none">Example </span> The <b> most garrulous </b> squirrels
+            </li>
+          </ul>
+          <h3 class="text-2xl font-normal mt-9 mb-7">Coordinate adjectives</h3>
+          <p class="font-poppins text-lg text-gray-700 leading-9 my-5">
+            Coordinate adjectives should be separated by a comma or the word<i> and</i>. Adjectives
+            are said to be coordinate if they modify the same noun in a sentence.
+          </p>
+          <ul
+            class="mt-8 w-full text-left ont-poppins text-lg text-gray-700 leading-10 tracking-wider"
+          >
+            <li>
+              <span class="pr-10 select-none">Example </span> This is going to be a
+              <b>long, cold </b> winter.
+            </li>
+            <li>
+              <span class="pr-10 select-none">Example </span>Isobel’s <b>dedicated</b> and
+              <b>tireless</b> efforts made all the difference.
+            </li>
+          </ul>
+          <p class="font-poppins text-lg text-gray-700 lending-9 my-6">
+            But just the fact that two adjectives appear next to each other doesn’t automatically
+            mean they are coordinate. Sometimes, an adjective and a noun form a single semantic
+            unit, which is then modified by another adjective. In this case, the adjectives are not
+            coordinate and should not be separated by a comma.
+          </p>
+          <ul
+            class="mt-8 w-full text-left ont-poppins text-lg text-gray-700 leading-10 tracking-wider"
+          >
+            <li>
+              <span class="pr-10 select-none">Example </span> My cat, Goober, loves sleeping on this
+              <b>tattered woolen</b> sweater.
+            </li>
+            <li>
+              <span class="pr-10 select-none">Example </span>No one could open the
+              <b>old silver</b> locket.
+            </li>
+          </ul>
+          <p class="font-poppins text-lg text-gray-700 lending-9 my-6">
+            In some cases, it’s pretty hard to decide whether two adjectives are coordinate
+            <i>or</i> not. But there are a couple of ways you can test them. Try inserting the word
+            <i>and</i> between the adjectives to see if the phrase still seems natural. In the first
+            sentence, “this tattered and woolen sweater” doesn’t sound right because you really
+            aren’t talking about a sweater that is both tattered and woolen. It’s a
+            <i>woolen sweater</i> that is tattered. <i>Woolen sweater</i> forms a unit of meaning
+            that is modified by <i>tattered.</i>
+          </p>
+          <p class="font-poppins text-lg text-gray-700 lending-9">
+            Another way to test for coordinate adjectives is to try switching the order of the
+            adjectives and seeing if the phrase still works. In the second sentence, you wouldn’t
+            say “No one could open the silver old locket.” You can’t reverse the order of the
+            adjectives because <i>silver locket</i> is a unit that is modified by <i>old.</i>
+          </p>
+          <h3 class="text-2xl font-normal mt-9 mb-7">Adjectives vs. adverbs</h3>
+          <p class="font-poppins text-lg text-gray-700 lending-9">
+            As mentioned above, many of us learned in school that adjectives modify nouns and that
+            adverbs modify verbs. But as we’ve seen, adjectives can also act as complements for
+            linking verbs. This leads to a common type of error: incorrectly substituting an adverb
+            in place of a predicate adjective. An example you’ve probably heard before is:
+          </p>
+          <ul
+            class="my-6 w-full text-left ont-poppins text-lg text-gray-700 leading-10 tracking-wider"
+          >
+            <li>
+              <span class="pr-10 select-none text-red-600">Incorrect </span>I feel
+              <b>badly </b> about what happened.
+            </li>
+          </ul>
+          <p class="font-poppins text-lg text-gray-700 lending-9 mb-5">
+            Because “feel” is a verb, it seems to call for an adverb rather than an adjective. But
+            “feel” isn’t just any verb; it’s a linking verb. An adverb would describe
+            <i>how </i>you perform the action of feeling—an adjective describes <i>what</i> you
+            feel. “I feel badly” means that you are bad at feeling things. If you’re trying to read
+            Braille through thick leather gloves, then it might make sense for you to say “I feel
+            badly.” But if you’re trying to say that you are experiencing negative emotions, “I feel
+            bad” is the phrase you want.
+          </p>
+          <p class="font-poppins text-lg text-gray-700 lending-9 mb-5">
+            It’s easier to see this distinction with a different linking verb. Consider the
+            difference between these two sentences:
+          </p>
+          <ul
+            class="mt-8 w-full text-left ont-poppins text-lg text-gray-700 leading-10 tracking-wider"
+          >
+            <li><span class="pr-10 select-none">Example </span> Goober smells badly.</li>
+            <li><span class="pr-10 select-none">Example </span>Goober smells bad.</li>
+          </ul>
+          <p class="font-poppins text-lg text-gray-700 lending-9 my-5">
+            “Goober smells badly” means that Goober, the poor thing, has a weak sense of smell.
+            “Goober smells bad” means Goober stinks—poor us.
+          </p>
+          <h3 class="text-2xl font-normal mt-11 mb-9">
+            When nouns become adjectives and adjectives become nouns
+          </h3>
+          <p class="font-poppins text-lg text-gray-700 lending-9 mb-5">
+            One more thing you should know about adjectives is that, sometimes, a word that is
+            normally used as a noun can function as an adjective, depending on its placement. For
+            example:
+          </p>
+          <ul
+            class="mt-8 w-full text-left ont-poppins text-lg text-gray-700 leading-10 tracking-wider"
+          >
+            <li>
+              <span class="pr-10 select-none">Example </span> Never try to pet someone’s
+              <b>guide</b> dog without asking permission first.
+            </li>
+          </ul>
+          <p class="font-poppins text-lg text-gray-700 lending-9 my-8">
+            <i>Guide</i> is a noun. But in this sentence, it modifies <i>dog</i>. It works the other
+            way, too. Some words that are normally adjectives can function as nouns:
+          </p>
+          <ul class="w-full text-left ont-poppins text-lg text-gray-700 leading-10 tracking-wider">
+            <li>
+              <span class="pr-10 select-none">Example </span> Candice is working on a fundraiser to
+              help the <b> homeless.</b>.
+            </li>
+          </ul>
+          <p class="font-poppins text-lg text-gray-700 lending-9 my-8">
+            In the context of this sentence,<i> homeless</i> is functioning as a noun. It can be
+            hard to wrap your head around this if you think of adjectives and nouns only as
+            particular classes of words. But the terms “adjective” and “noun” aren’t just about a
+            word’s form—they’re also about its function.
+          </p>
+          <h3 class="text-2xl font-normal mt-12 mb-9">Adjective usage advice</h3>
+          <p class="font-poppins text-lg text-gray-700 lending-9 mb-8">
+            We’ll end with a few words about adjectives and style. It’s one thing to know how to use
+            an adjective; it’s another to know when using one is a good idea. Good writing is
+            precise and concise. Sometimes, you need an adjective to convey exactly what you mean.
+            It’s hard to describe a red sports car without the word “red.” But, often, choosing the
+            right noun eliminates the need to tack on an adjective. Is it a big house, or is it a
+            mansion? A large crowd, or a throng? A mixed-breed dog, or a mutt? A dark night, or just
+            . . . night? Always remember to make every word count in your writing. If you need an
+            adjective, use it. But if it’s not pulling its weight, delete it.
+          </p>
+          <p class="text-2xl font-normal mt-11">Adjective FAQs</p>
+          <p class="text-xl text-gray-700 my-6"><b>What is an adjective?</b></p>
+          <p class="font-poppins text-lg text-gray-700 lending-9">
+            An adjective is a word that describes the traits, qualities, or number of a noun.
+          </p>
+          <p class="text-xl text-gray-700 my-6"><b>What are examples of adjectives?</b></p>
+          <p class="font-poppins text-lg text-gray-700 lending-9">
+            Descriptive words like “beautiful,” “smooth,” or “heavy” are all adjectives, as are
+            numbers ( “<i>twelve eggs</i>”).
+          </p>
+          <p class="text-xl text-gray-700 my-6">
+            <b>What is the difference between adjectives and adverbs?</b>
+          </p>
+          <p class="font-poppins text-lg text-gray-700 lending-9">
+            Adjectives modify nouns, while adverbs modify adjectives and other adverbs. For example,
+            in the phrase “very funny movie,” <i>funny</i> is an adjective describing the noun
+            <i>movie</i>, and very is an adverb describing the adjective <i>funny</i>.
+          </p>
+          <p class="text-xl text-gray-700 my-6"><b>Can adjectives modify adverbs?</b></p>
+          <p class="font-poppins text-lg text-gray-700 lending-9 mb-20">
+            Adjectives can only modify nouns, not adverbs. Only adverbs can modify other adverbs.
+          </p>
+        </div>
+
+        <div
+          class="flex flex-col items-center overflow-hidden h-72 rounded-xl box-shadow-lightpink w-full"
+        >
+          <div class="h-2 bg-gradient-blue mb-12 rounded-full w-full"></div>
+          <h2 class="text-4xl text-center">Your writing, at its best.</h2>
+          <div class="flex justify-center my-9 px-3">
+            <button
+              class="w-80 h-14 rounded-full bg-teal-400 text-white font-serif font-medium text-xl"
+            >
+              Get Grammarly for free
+            </button>
+          </div>
+          <div class="">
+            <p class="text-center text-gray-400 font-poppins">
+              Works on all your favorite websites
+            </p>
+            <div class="text-gray-400 text-center">
+              <i class="fa-brands fa-apple"></i>
+              <i class="fa-brands fa-android"></i>
+              <i class="fa-brands fa-chrome"></i>
+              <i class="fa-brands fa-safari"></i>
+              <i class="fa-brands fa-firefox-browser"></i>
+              <i class="fa-brands fa-internet-explorer"></i>
+              <i class="fa-brands fa-windows"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex justify-center px-3">
+      <div class="">
+        <h2 class="ml-8 my-9 font-poppins font-semibold text-2xl sm:text-center">
+          Related Articles
+        </h2>
+        <div class="sm:block md:flex md:justify-between">
+          <div class="hover:bg-slate-100 rounded-md sm:w-full md:w-1/3">
+            <a href="">
+              <img
+                src="http://localhost:3000/public/img/simile-vs-metaphor.jpeg"
+                alt=""
+                class="md:w-80 rounded-xl md:h-44 m-auto mt-5 sm:w-96 sm:h-64"
+              />
+              <h4 class="font-poppins text-gray-400 font-semibold text-xs ml-8 my-5">GRAMMAR</h4>
+              <p class="ml-8 mb-5">Simile vs. Metaphor: Whats the Difference?</p></a
+            >
+          </div>
+
+          <div class="md:w-1/3 hover:bg-slate-100 rounded-md md:mx-3 sm:w-full">
+            <a href="">
+              <img
+                src="http://localhost:3000/public/img/future.png"
+                alt=""
+                class="md:w-80 rounded-xl md:h-44 m-auto mt-5 sm:w-96 sm:h-64"
+              />
+              <h4 class="font-poppins text-gray-400 font-semibold text-xs ml-8 my-5">GRAMMAR</h4>
+              <p class="ml-8 mb-5">How to Use Future Continuouse Tense</p></a
+            >
+          </div>
+
+          <div class="md:w-1/3 hover:bg-slate-100 rounded-md sm:w-full">
+            <a href=""
+              ><img
+                src="http://localhost:3000/public/img/negatives.jpeg"
+                alt=""
+                class="md:w-80 rounded-xl md:h-44 m-auto mt-5 sm:w-96 sm:h-64"
+              />
+              <h4 class="font-poppins text-gray-400 font-semibold text-xs ml-8 my-5">GRAMMAR</h4>
+              <p class="ml-8 mb-5">
+                Negatives and Double Negatives: What They Are, with Examples
+              </p></a
+            >
+          </div>
+        </div>
+        <div class="md:flex md:justify-between w-full mb-16 sm:block">
+          <div class="md:w-1/3 hover:bg-slate-100 rounded-md sm:w-full">
+            <a href=""
+              ><img
+                src="http://localhost:3000/public/img/filler-words.jpeg"
+                alt=""
+                class="md:w-80 rounded-xl md:h-44 m-auto mt-5 sm:w-96 sm:h-64"
+              />
+              <h4 class="font-poppins text-gray-400 font-semibold text-xs ml-8 my-5">GRAMMAR</h4>
+              <p class="ml-8 mb-5">What Are Filler Words, and How Do You Cut Them</p></a
+            >
+          </div>
+
+          <div class="md:w-1/3 hover:bg-slate-100 rounded-md md:mx-3 sm:w-full">
+            <a href="">
+              <img
+                src="http://localhost:3000/public/img/nouns.jpeg"
+                alt=""
+                class="md:w-80 rounded-xl md:h-44 m-auto mt-5 sm:w-96 sm:h-64"
+              />
+              <h4 class="font-poppins text-gray-400 font-semibold text-xs ml-8 my-5">GRAMMAR</h4>
+              <p class="ml-8 mb-5">Possessive Nouns: How to Use Them, With Examples</p></a
+            >
+          </div>
+
+          <div class="md:w-1/3 hover:bg-slate-100 rounded-md sm:w-full">
+            <a href
+              ><img
+                src="http://localhost:3000/public/img/bandwagon.png"
+                alt=""
+                class="md:w-80 rounded-xl md:h-44 m-auto mt-5 sm:w-96 sm:h-64"
+              />
+              <h4 class="font-poppins text-gray-400 font-semibold text-xs ml-8 my-5">GRAMMAR</h4>
+              <p class="ml-8 mb-5">Bandwagon Follacy: Definition and Examples</p></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex justify-center">
+      <div class="bg-gradient-blue h-80 rounded-lg w-3/5">
+        <div class="flex justify-center my-5 xl:mx-5">
+          <h2 class="font-serif text-4xl font-normal text-white text-center my-10">
+            Writing, grammar, and communication tips for your inbox.
+          </h2>
+        </div>
+
+        <div class="flex justify-center">
+          <div class="w-full mx-52 flex justify-center sm:mx-20">
+            <label for="email"> </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your email..."
+              class="flex justify-center h-14 rounded w-full p-1.5"
+            />
+          </div>
+          <div class="relative h-0 w-0">
+            <button
+              class="relative top-2.5 right-48 w-24 rounded bg-sky-500 h-9 text-white text-xs"
+            >
+              SUBSCRIBE
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex justify-center my-20 bg-red-50 pb-20 pt-14 px-2">
+      <div class="flex justify-center lg:w-7/12 px-2 sm:w-5/6">
+        <div class="w-1/4 sm:mr-5">
+          <h2 class="mb-2 text-xl font-medium text-gray-800">Grammar</h2>
+          <ul class="text-cyan-900 sm:text-sm leading-6 lg:text-lg">
+            <a href=""><li>Adjectives</li></a>
+            <a href=""><li>Adverbs</li></a>
+            <a href=""><li>Articles</li></a>
+            <a href=""><li>Conjunctions</li></a>
+            <a href=""><li>Verbs</li></a>
+            <a href=""><li>Interjections</li></a>
+            <a href=""><li>Nouns</li></a>
+            <a href=""><li>Prepositions</li></a>
+            <a href=""><li>Pronouns</li></a>
+          </ul>
+        </div>
+        <div class="w-1/4 sm:mr-5">
+          <h2 class="mb-2 text-xl font-medium text-gray-800">Grammar</h2>
+          <ul class="text-cyan-900 sm:text-sm leading-6 lg:text-lg">
+            <a href=""><li>Adjectives</li></a>
+            <a href=""><li>Adverbs</li></a>
+            <a href=""><li>Articles</li></a>
+            <a href=""><li>Conjunctions</li></a>
+            <a href=""><li>Verbs</li></a>
+            <a href=""><li>Interjections</li></a>
+            <a href=""><li>Nouns</li></a>
+            <a href=""><li>Prepositions</li></a>
+            <a href=""><li>Pronouns</li></a>
+            <a href=""><li>Verbs</li></a>
+            <a href=""><li>Interjections</li></a>
+            <a href=""><li>Nouns</li></a>
+            <a href=""><li>Prepositions</li></a>
+            <a href=""><li>Pronouns</li></a>
+          </ul>
+        </div>
+        <div class="w-1/4 sm:mr-5">
+          <h2 class="mb-2 text-xl font-medium text-gray-800">Grammar</h2>
+          <ul class="text-cyan-900 sm:text-sm leading-6 lg:text-lg">
+            <a href=""><li>Adjectives</li></a>
+            <a href=""><li>Adverbs</li></a>
+            <a href=""><li>Articles</li></a>
+            <a href=""><li>Conjunctions</li></a>
+            <a href=""><li>Verbs</li></a>
+            <a href=""><li>Interjections</li></a>
+            <a href=""><li>Nouns</li></a>
+            <a href=""><li>Prepositions</li></a>
+            <a href=""><li>Pronouns</li></a>
+          </ul>
+        </div>
+        <div class="w-1/4 sm:mr-5">
+          <h2 class="mb-2 text-xl font-medium text-gray-800">Grammar</h2>
+          <ul class="text-cyan-900 sm:text-sm leading-6 lg:text-lg">
+            <a href=""><li>Adjectives</li></a>
+            <a href=""><li>Adverbs</li></a>
+            <a href=""><li>Articles</li></a>
+            <a href=""><li>Conjunctions</li></a>
+            <a href=""><li>Verbs</li></a>
+            <a href=""><li>Interjections</li></a>
+            <a href=""><li>Nouns</li></a>
+            <a href=""><li>Prepositions</li></a>
+            <a href=""><li>Pronouns</li></a>
+            <a href=""><li>Conjunctions</li></a>
+          </ul>
+        </div>
+        <div class="w-1/4 sm:mr-5">
+          <h2 class="mb-2 text-xl font-medium text-gray-800">Grammar</h2>
+          <ul class="text-cyan-900 sm:text-sm leading-6 lg:text-lg">
+            <a href=""><li>Adjectives</li></a>
+            <a href=""><li>Adverbs</li></a>
+            <a href=""
+              ><li><i class="fa-brands fa-facebook-f"></i> Facebook</li></a
+            >
+            <a href=""
+              ><li class="flex items-center">
+                <img src="http://localhost:3000/public/img/instagram.svg" alt="" /> Instagram
+              </li></a
+            >
+            <a href=""
+              ><li><i class="fa-brands fa-twitter"></i> Twitter</li></a
+            >
+            <a href=""
+              ><li><i class="fa-brands fa-linkedin-in"></i> Linkedin</li></a
+            >
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+  <!-- let navbar = document.getElementById('navbar')
+
+  let sticky = navbar.offsetTop
+  function myFunction() {
+    console.log('window.pageYOffset: ', window.pageYOffset)
+    console.log('sticky: ', sticky)
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add('fixed')
+      navbar.classList.add('top-0')
+    } else {
+      navbar.classList.remove('fixed')
+      navbar.classList.remove('top-0')
+    }
+  } -->
+  <script>
+    var writtingOption = document.getElementById('writting-option')
+    writtingOption.addEventListener('click', () => {
+      document.getElementById('popupList').classList.toggle('show')
+    })
+
+    window.onscroll = function () {
+      myFunction()
+    }
+    let fixedBlue = document.getElementById('fixedBlue')
+    console.log('fixedBlue: ', fixedBlue)
+    let sticky = fixedBlue.offsetTop
+
+    function myFunction() {
+      console.log('window.pageYOffset: ', window.pageYOffset)
+      console.log('sticky: ', sticky)
+      let listIcon = document.getElementById('listIcon')
+      let iconsFixed = document.getElementById('iconsFixed')
+
+      if (window.pageYOffset >= sticky) {
+        fixedBlue.classList.add('fixed')
+        fixedBlue.classList.add('top-0')
+        fixedBlue.classList.add('h-20')
+        listIcon.classList.add('h-0')
+        listIcon.classList.add('overflow-hidden')
+        // iconsFixed.classList.add('fixed')
+        // iconsFixed.classList.add('top-0')
+      } else {
+        fixedBlue.classList.remove('fixed')
+        fixedBlue.classList.remove('top-0')
+        fixedBlue.classList.remove('h-20')
+        listIcon.classList.remove('h-0')
+        listIcon.classList.remove('overflow-hidden')
+        // iconsFixed.classList.remove('fixed')
+        // iconsFixed.classList.remove('top-0')
+      }
+    }
+  </script>
+</html>

@@ -1,0 +1,30 @@
+{
+  "name": "grammar",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "frontend:dev": "npx tailwindcss -i ./public/css/style.css -o ./dist/css/style.css --watch",
+    "server:dev": "nodemon src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tanysavchuk/grammar.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tanysavchuk/grammar/issues"
+  },
+  "homepage": "https://github.com/tanysavchuk/grammar#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.19"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
+  }
+}

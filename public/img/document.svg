@@ -1,0 +1,24 @@
+<svg width="33" height="35" viewBox="0 0 33 35" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient x1="3.108%" y1="70.84%" x2="93.562%" y2="38.303%" id="a">
+              <stop stop-color="#15C39A" offset="0%" />
+              <stop stop-color="#4C7AF1" offset="100%" />
+            </linearGradient>
+          </defs>
+          <g fill="none" fill-rule="evenodd">
+            <circle fill="#F1F2FC" cx="16" cy="19" r="16" />
+            <rect fill="url(#a)" x="14" y="1" width="19" height="22" rx="2" />
+            <path
+              d="M9.064 4.936a2.508 2.508 0 0 1-1.128 0 2.504 2.504 0 0 0-1.872-1.872 2.508 2.508 0 0 1 0-1.128A2.504 2.504 0 0 0 7.936.064a2.508 2.508 0 0 1 1.128 0 2.504 2.504 0 0 0 1.872 1.872 2.508 2.508 0 0 1 0 1.128 2.504 2.504 0 0 0-1.872 1.872zM5 9.915a1.498 1.498 0 0 1-1 0V9h-.915a1.498 1.498 0 0 1 0-1H4v-.915a1.498 1.498 0 0 1 1 0V8h.915a1.498 1.498 0 0 1 0 1H5v.915zm4 5a1.498 1.498 0 0 1-1 0V14h-.915a1.498 1.498 0 0 1 0-1H8v-.915a1.498 1.498 0 0 1 1 0V13h.915a1.498 1.498 0 0 1 0 1H9v.915z"
+              fill="#F6C241"
+            />
+            <path
+              d="M19.5 8h8M19.5 12h8M19.5 16h8"
+              stroke="#FFF"
+              stroke-width="2"
+              fill="#FFF"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </g>
+        </svg>
