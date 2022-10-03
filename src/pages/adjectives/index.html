@@ -35,7 +35,10 @@
               Grammarly stands with our friends, colleagues, and family in Ukraine, and with all
               people of Ukraine.
             </h2>
-            <p class="text-teal-400 font-medium md:text-lg sm:text-xs text-center">Join us</p>
+            <p class="text-teal-400 font-medium md:text-lg sm:text-xs text-center">
+              Join us
+              <i class="fa-solid fa-angle-right"></i>
+            </p>
           </a>
         </div>
       </div>
@@ -48,11 +51,13 @@
       </div>
       <nav class="flex items-center justify-between w-full">
         <div class="flex items-center">
-          <div
-            id="writting-option"
-            class="font-serif font-semibold text-xs px-5 hover:text-gray-400 cursor-pointer"
-          >
-            WRITING
+          <div id="writting-option" class="flex items-center px-5">
+            <p class="font-serif font-semibold text-xs hover:text-gray-400 cursor-pointer pr-1">
+              WRITING
+            </p>
+            <i
+              class="fa-sharp fa-solid fa-caret-down font-serif font-semibold text-xs text-gray-400 cursor-pointer"
+            ></i>
           </div>
           <div
             class="invisible absolute top-24 left-48 cursor-pointer inline-block w-28 bg-white popup-shadow rounded-md"
@@ -76,17 +81,29 @@
           </div>
         </div>
 
-        <div class="flex items-center justify-end">
-          <div class="flex items-center pl-24">
-            <i
-              class="fa-solid fa-magnifying-glass text-gray-400 text-xl font-extralight pr-2.5"
-            ></i>
-            <input
-              type="text"
-              name="search"
-              placeholder="SEARCH"
-              class="font-poppins font-medium text-xs w-20 cursor-pointer"
-            />
+        <div id="searchWrap" class="flex items-center justify-end">
+          <div id="searchBox" class="flex items-center pl-24">
+            <div id="SearchInvisible">
+              <i
+                class="fa-solid fa-magnifying-glass text-gray-400 text-xl font-extralight pr-2.5"
+              ></i>
+            </div>
+            <div id="inputSearchWrap" class="flex items-center">
+              <input
+                id="inputSearch"
+                type="text"
+                name="search"
+                placeholder="SEARCH"
+                class="font-poppins font-medium text-xs cursor-pointer h-10 w-full outline-none"
+              />
+              <i id="xMark" class="fa-solid fa-xmark text-gray-400 overflow-hidden h-0 m-0"></i>
+            </div>
+            <div id="iconSearchGlassWrap" class="h-0 w-0 overflow-hidden">
+              <i
+                id="iconSearchGlass"
+                class="fa-solid fa-magnifying-glass text-gray-400 text-xl font-extralight pr-2.5"
+              ></i>
+            </div>
           </div>
         </div>
       </nav>
@@ -117,7 +134,7 @@
     </div>
 
     <div class="flex justify-center">
-      <div class="mr-5">
+      <div class="mr-5 sm:h-0 sm:w-0 sm:overflow-hidden md:overflow-auto lg:h-max lg:w-max">
         <div class="mt-44 md:px-2 sm:pl-5">
           <img src="http://localhost:3000/public/img/logo-grin.jpeg" alt="" class="h-16" />
 
@@ -733,20 +750,7 @@
       </div>
     </div>
   </body>
-  <!-- let navbar = document.getElementById('navbar')
 
-  let sticky = navbar.offsetTop
-  function myFunction() {
-    console.log('window.pageYOffset: ', window.pageYOffset)
-    console.log('sticky: ', sticky)
-    if (window.pageYOffset >= sticky) {
-      navbar.classList.add('fixed')
-      navbar.classList.add('top-0')
-    } else {
-      navbar.classList.remove('fixed')
-      navbar.classList.remove('top-0')
-    }
-  } -->
   <script>
     var writtingOption = document.getElementById('writting-option')
     writtingOption.addEventListener('click', () => {
@@ -772,17 +776,89 @@
         fixedBlue.classList.add('h-20')
         listIcon.classList.add('h-0')
         listIcon.classList.add('overflow-hidden')
-        // iconsFixed.classList.add('fixed')
-        // iconsFixed.classList.add('top-0')
       } else {
         fixedBlue.classList.remove('fixed')
         fixedBlue.classList.remove('top-0')
         fixedBlue.classList.remove('h-20')
         listIcon.classList.remove('h-0')
         listIcon.classList.remove('overflow-hidden')
-        // iconsFixed.classList.remove('fixed')
-        // iconsFixed.classList.remove('top-0')
       }
     }
+
+    let searchBox = document.getElementById('searchBox')
+
+    let iconSearchGlassWrap = document.getElementById('iconSearchGlassWrap')
+
+    let searchWrap = document.getElementById('searchWrap')
+
+    let iconSearchGlass = document.getElementById('iconSearchGlass')
+
+    let inputSearch = document.getElementById('inputSearch')
+    let inputSearchWrap = document.getElementById('inputSearchWrap')
+
+    let xMark = document.getElementById('xMark')
+
+    let SearchInvisible = document.getElementById('SearchInvisible')
+    searchBox.addEventListener('click', (event) => {
+      let className = searchBox.getAttribute('class')
+      console.log('className:', className)
+      if (searchBox.classList.value.indexOf('w-full') > -1) {
+        searchBox.classList.remove('w-full')
+        searchBox.classList.remove('pl-0')
+
+        inputSearchWrap.classList.remove('w-full')
+
+        searchWrap.classList.remove('w-full')
+
+        SearchInvisible.classList.remove('h-0')
+        SearchInvisible.classList.remove('w-0')
+        SearchInvisible.classList.remove('overflow-hidden')
+
+        xMark.classList.remove('overflow-visible')
+        xMark.classList.remove('relative')
+        xMark.classList.remove('right-8')
+        xMark.classList.remove('bottom-2')
+
+        iconSearchGlassWrap.classList.remove('visible')
+        iconSearchGlassWrap.classList.remove('h-10')
+        iconSearchGlassWrap.classList.remove('w-10')
+        iconSearchGlassWrap.classList.remove('bg-teal-400')
+        iconSearchGlassWrap.classList.remove('rounded-full')
+        iconSearchGlassWrap.classList.remove('flex')
+        iconSearchGlassWrap.classList.remove('justify-center')
+        iconSearchGlassWrap.classList.remove('items-center')
+
+        iconSearchGlass.classList.remove('pr-0')
+        iconSearchGlass.classList.remove('text-white')
+      } else {
+        searchBox.classList.add('w-full')
+        searchBox.classList.add('pl-0')
+
+        inputSearchWrap.classList.add('w-full')
+
+        searchWrap.classList.add('w-full')
+
+        SearchInvisible.classList.add('h-0')
+        SearchInvisible.classList.add('w-0')
+        SearchInvisible.classList.add('overflow-hidden')
+
+        xMark.classList.add('overflow-visible')
+        xMark.classList.add('relative')
+        xMark.classList.add('right-8')
+        xMark.classList.add('bottom-2')
+
+        iconSearchGlassWrap.classList.add('visible')
+        iconSearchGlassWrap.classList.add('h-10')
+        iconSearchGlassWrap.classList.add('w-10')
+        iconSearchGlassWrap.classList.add('bg-teal-400')
+        iconSearchGlassWrap.classList.add('rounded-full')
+        iconSearchGlassWrap.classList.add('flex')
+        iconSearchGlassWrap.classList.add('justify-center')
+        iconSearchGlassWrap.classList.add('items-center')
+
+        iconSearchGlass.classList.add('pr-0')
+        iconSearchGlass.classList.add('text-white')
+      }
+    })
   </script>
 </html>
