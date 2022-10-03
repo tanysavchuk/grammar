@@ -71,36 +71,36 @@
             <a href="">COMPANI </a>
           </div>
         </div>
-        <!-- <div class="flex w-full h-8">
-          <div class="flex items-center justify-between borderblack absolute bg-white">
-            <input
-              type="text"
-              name="search"
-              placeholder="SEARCH"
-              class="font-poppins font-medium text-xs cursor-pointer pl-12"
-            />
-            <button class="rounded-full bg-teal-400 h-8 w-8 flex justify-end items-center">
-              <i class="fa-solid fa-magnifying-glass text-white text-lg font-thin pr-2.5"></i>
-            </button>
-          </div>
-        </div> -->
-        <div class="flex items-center justify-end">
-          <div class="flex items-center pl-24">
-            <i class="fa-solid fa-magnifying-glass text-gray-400 text-xl font-thin pr-2.5"></i>
-            <input
-              type="text"
-              name="search"
-              placeholder="SEARCH"
-              class="font-poppins font-medium text-xs w-20 cursor-pointer"
-            />
-          </div>
-
-          <div>
-            <button
-              class="w-40 h-8 rounded-full bg-teal-400 text-white font-serif font-medium text-sm"
-            >
-              START WRITING
-            </button>
+        <div id="searchWrap" class="flex items-center justify-end">
+          <div id="searchBox" class="flex items-center pl-24">
+            <div id="SearchInvisible">
+              <i
+                class="fa-solid fa-magnifying-glass text-gray-400 text-xl font-extralight pr-2.5"
+              ></i>
+            </div>
+            <div id="inputSearchWrap" class="flex items-center">
+              <input
+                id="inputSearch"
+                type="text"
+                name="search"
+                placeholder="SEARCH"
+                class="font-poppins font-medium text-xs cursor-pointer h-10 w-full outline-none"
+              />
+              <i id="xMark" class="fa-solid fa-xmark text-gray-400 overflow-hidden h-0 m-0"></i>
+            </div>
+            <div id="iconSearchGlassWrap" class="h-0 w-0 overflow-hidden">
+              <i
+                id="iconSearchGlass"
+                class="fa-solid fa-magnifying-glass text-gray-400 text-xl font-extralight pr-2.5"
+              ></i>
+            </div>
+            <div id="buttonInvisible">
+              <button
+                class="w-40 h-8 rounded-full bg-teal-400 text-white font-serif font-medium text-sm"
+              >
+                START WRITING
+              </button>
+            </div>
           </div>
         </div>
       </nav>
@@ -339,5 +339,92 @@
         navbar.classList.remove('top-0')
       }
     }
+
+    let searchBox = document.getElementById('searchBox')
+
+    let iconSearchGlassWrap = document.getElementById('iconSearchGlassWrap')
+
+    let searchWrap = document.getElementById('searchWrap')
+
+    let iconSearchGlass = document.getElementById('iconSearchGlass')
+
+    let inputSearch = document.getElementById('inputSearch')
+    let inputSearchWrap = document.getElementById('inputSearchWrap')
+
+    let xMark = document.getElementById('xMark')
+
+    let SearchInvisible = document.getElementById('SearchInvisible')
+
+    let buttonInvisible = document.getElementById('buttonInvisible')
+
+    searchBox.addEventListener('click', (event) => {
+      let className = searchBox.getAttribute('class')
+      console.log('className:', className)
+      if (searchBox.classList.value.indexOf('w-full') > -1) {
+        searchBox.classList.remove('w-full')
+        searchBox.classList.remove('pl-0')
+
+        inputSearchWrap.classList.remove('w-full')
+
+        searchWrap.classList.remove('w-full')
+
+        SearchInvisible.classList.remove('h-0')
+        SearchInvisible.classList.remove('w-0')
+        SearchInvisible.classList.remove('overflow-hidden')
+
+        xMark.classList.remove('overflow-visible')
+        xMark.classList.remove('relative')
+        xMark.classList.remove('right-8')
+        xMark.classList.remove('bottom-2')
+
+        iconSearchGlassWrap.classList.remove('visible')
+        iconSearchGlassWrap.classList.remove('h-10')
+        iconSearchGlassWrap.classList.remove('w-10')
+        iconSearchGlassWrap.classList.remove('bg-teal-400')
+        iconSearchGlassWrap.classList.remove('rounded-full')
+        iconSearchGlassWrap.classList.remove('flex')
+        iconSearchGlassWrap.classList.remove('justify-center')
+        iconSearchGlassWrap.classList.remove('items-center')
+
+        iconSearchGlass.classList.remove('pr-0')
+        iconSearchGlass.classList.remove('text-white')
+
+        buttonInvisible.classList.remove('h-0')
+        buttonInvisible.classList.remove('w-0')
+        buttonInvisible.classList.remove('overflow-hidden')
+      } else {
+        searchBox.classList.add('w-full')
+        searchBox.classList.add('pl-0')
+
+        inputSearchWrap.classList.add('w-full')
+
+        searchWrap.classList.add('w-full')
+
+        SearchInvisible.classList.add('h-0')
+        SearchInvisible.classList.add('w-0')
+        SearchInvisible.classList.add('overflow-hidden')
+
+        xMark.classList.add('overflow-visible')
+        xMark.classList.add('relative')
+        xMark.classList.add('right-8')
+        xMark.classList.add('bottom-2')
+
+        iconSearchGlassWrap.classList.add('visible')
+        iconSearchGlassWrap.classList.add('h-10')
+        iconSearchGlassWrap.classList.add('w-10')
+        iconSearchGlassWrap.classList.add('bg-teal-400')
+        iconSearchGlassWrap.classList.add('rounded-full')
+        iconSearchGlassWrap.classList.add('flex')
+        iconSearchGlassWrap.classList.add('justify-center')
+        iconSearchGlassWrap.classList.add('items-center')
+
+        iconSearchGlass.classList.add('pr-0')
+        iconSearchGlass.classList.add('text-white')
+
+        buttonInvisible.classList.add('h-0')
+        buttonInvisible.classList.add('w-0')
+        buttonInvisible.classList.add('overflow-hidden')
+      }
+    })
   </script>
 </html>
